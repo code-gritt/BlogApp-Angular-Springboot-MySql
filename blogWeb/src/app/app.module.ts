@@ -12,9 +12,15 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { provideHttpClient } from '@angular/common/http';
+import { CreatePostComponent } from './pages/create-post/create-post.component';
+import { MatCardModule } from '@angular/material/card';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatInputModule } from '@angular/material/input';
+import { MatChipsModule } from '@angular/material/chips';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, CreatePostComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -23,6 +29,11 @@ import { provideHttpClient } from '@angular/common/http';
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,
+    MatCardModule,
+    MatFormFieldModule,
+    MatSnackBarModule,
+    MatInputModule,
+    MatChipsModule,
   ],
   providers: [
     provideClientHydration(),
